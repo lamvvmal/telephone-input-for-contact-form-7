@@ -4,13 +4,996 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lista de codigos de areas de paises</title>
-	<style type="text/css" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"></style>
+	<link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" media='all' />
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+	<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+
 </head>
 <body>
+
+
+
+
+
+<div class="container">
+
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img style="height: 500px;" src="https://ayudawp.com/wp-content/uploads/2017/02/cf7-840x300.gif" class="d-block w-100" alt="se complementa con contact form 7">
+    </div>
+    <div class="carousel-item">
+      <img style="height: 500px;" src="https://www.oroyfinanzas.com/files/2014/11/opensource_logo.jpg" class="d-block w-100" alt="usa este codigo como desees">
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+    	<br><br>
+    	<h1>Desplegagle de paises para implementar en formulario</h1>
+    	<br><br><br><br><br><br>
+    </div>
+    <div class="col-md-6">
+    	<h2>Demostraci&oacute;n:</h2>
+    </div>
+    <div class="col-md-6">
+      
+
+
+
+
+			<label>
+
+			<input class="wpcf7-form-control wpcf7-hidden" id="telefonito" value="+355546 465 4654" type="hidden" name="telefonito">
+
+			</label>
+
+
+			<div id="camposbanderas">
+
+
+
+
+			<div id="is-relative">
+			  <input type="text" class="input prefijo" id="miprefijo" style="width: 35% !important;padding: 1%;" value="+34" readonly>
+			  <input type="text" id="elinput" claass="tlfescrit" name="elinput" style="padding: 1%;width: 63% !important;" min="8" max="15">
+			  <span id="icon">
+			      <img class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://inseryal.es/wp-content/uploads/2023/01/mundo.png" width="25px" height="25px">
+			</span>
+
+			    <div class="dropdown">
+			      <ul id="paiscodigo" class="redf holaleo dropdown-menu" aria-labelledby="dropdownMenuButton" style="display: none;">
+			        <li onclick="getEmpId(this)" data-code="+93" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/af.png" width="20" height="15"> Afganistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+355" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/al.png" width="20" height="15"> Albania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+213" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/dz.png" width="20" height="15"> Argelia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1684" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/as.png" width="20" height="15"> Samoa Americana
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+376" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ad.png" width="20" height="15"> Andorra
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+244" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ao.png" width="20" height="15"> Angola
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1264" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ai.png" width="20" height="15"> Anguilla
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+672" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/aq.png" width="20" height="15"> Antártida
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1268" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ag.png" width="20" height="15"> Antigua y Barbuda
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+54" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ar.png" width="20" height="15"> Argentina
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+374" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/am.png" width="20" height="15"> Armenia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+297" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/aw.png" width="20" height="15"> Aruba
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+61" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/au.png" width="20" height="15"> Australia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+43" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/at.png" width="20" height="15"> Austria
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+994" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/az.png" width="20" height="15"> Azerbaiyán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1242" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bs.png" width="20" height="15"> Bahamas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+973" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bh.png" width="20" height="15"> Baréin
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+880" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bd.png" width="20" height="15"> Banglades
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1246" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bb.png" width="20" height="15"> Barbados
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+375" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/by.png" width="20" height="15"> Bielorrusia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+32" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/be.png" width="20" height="15"> Bélgica
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+501" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bz.png" width="20" height="15"> Belice
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+229" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bj.png" width="20" height="15"> Benin
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1441" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bm.png" width="20" height="15"> Bermudas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+975" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bt.png" width="20" height="15"> Butan
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+591" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bo.png" width="20" height="15"> Bolivia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+387" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ba.png" width="20" height="15"> Bosnia-Herzegovina
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+267" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bw.png" width="20" height="15"> Botsuana
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+55" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/br.png" width="20" height="15"> Brasil
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+246" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/io.png" width="20" height="15"> Territorio Británico del Océano Índico
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+673" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bn.png" width="20" height="15"> Brunei
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+359" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bg.png" width="20" height="15"> Bulgaria
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+226" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bf.png" width="20" height="15"> Burkina Faso
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+257" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bi.png" width="20" height="15"> Burundi
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+855" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kh.png" width="20" height="15"> Camboya
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+237" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cm.png" width="20" height="15"> Camerún
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ca.png" width="20" height="15"> Canadá
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+238" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cv.png" width="20" height="15"> Cabo Verde
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+ 345" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ky.png" width="20" height="15"> Islas Caimán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+236" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cf.png" width="20" height="15"> República Centroafricana
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+235" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/td.png" width="20" height="15"> Chad
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+56" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cl.png" width="20" height="15"> Chile
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+86" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cn.png" width="20" height="15"> China
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+61" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cx.png" width="20" height="15"> Isla de Navidad
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+61" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cc.png" width="20" height="15"> Islas Cocos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+57" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/co.png" width="20" height="15"> Colombia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+269" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/km.png" width="20" height="15"> Comoras
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+242" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cg.png" width="20" height="15"> Congo
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+243" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cd.png" width="20" height="15"> República Democrática del Congo
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+682" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ck.png" width="20" height="15"> Islas Cook
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+506" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cr.png" width="20" height="15"> Costa Rica
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+225" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ci.png" width="20" height="15"> Costa de Marfil
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+385" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/hr.png" width="20" height="15"> Croacia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+53" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cu.png" width="20" height="15"> Cuba
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+537" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cy.png" width="20" height="15"> Chipre
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+420" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/cz.png" width="20" height="15"> Chequia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+45" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/dk.png" width="20" height="15"> Dinamarca
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+253" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/dj.png" width="20" height="15"> Yibuti
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1767" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/dm.png" width="20" height="15"> Dominica
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1849" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/do.png" width="20" height="15"> República Dominicana
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+593" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ec.png" width="20" height="15"> Ecuador
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+20" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/eg.png" width="20" height="15"> Egipto
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+503" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sv.png" width="20" height="15"> El Salvador
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+240" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gq.png" width="20" height="15"> Guinea Ecuatorial
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+291" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/er.png" width="20" height="15"> Eritrea
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+372" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ee.png" width="20" height="15"> Estonia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+251" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/et.png" width="20" height="15"> Etiopía
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+500" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/fk.png" width="20" height="15"> Islas Malvinas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+298" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/fo.png" width="20" height="15"> Islas Feroe
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+679" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/fj.png" width="20" height="15"> Fiyi
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+358" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/fi.png" width="20" height="15"> Finlandia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+33" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/fr.png" width="20" height="15"> Francia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+594" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gf.png" width="20" height="15"> Guayana Francesa
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+689" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pf.png" width="20" height="15"> Polinesia Francesa
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+241" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ga.png" width="20" height="15"> Gabón
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+220" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gm.png" width="20" height="15"> Gambia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+995" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ge.png" width="20" height="15"> Georgia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+49" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/de.png" width="20" height="15"> Alemania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+233" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gh.png" width="20" height="15"> Ghana
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+350" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gi.png" width="20" height="15"> Gibraltar
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+30" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gr.png" width="20" height="15"> Grecia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+299" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gl.png" width="20" height="15"> Groenlandia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1473" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gd.png" width="20" height="15"> Granada
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+590" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gp.png" width="20" height="15"> Guadalupe
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1671" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gu.png" width="20" height="15"> Guam
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+502" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gt.png" width="20" height="15"> Guatemala
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+44" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gg.png" width="20" height="15"> Guernsey
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+224" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gn.png" width="20" height="15"> Guinea
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+245" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gw.png" width="20" height="15"> Guinea-Bisau
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+595" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gy.png" width="20" height="15"> Guyana
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+509" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ht.png" width="20" height="15"> Haití
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+379" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/va.png" width="20" height="15"> Ciudad del Vaticano
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+504" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/hn.png" width="20" height="15"> Honduras
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+852" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/hk.png" width="20" height="15"> Hong Kong
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+36" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/hu.png" width="20" height="15"> Hungría
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+354" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/is.png" width="20" height="15"> Islandia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+91" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/in.png" width="20" height="15"> India
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+62" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/id.png" width="20" height="15"> Indonesia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+98" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ir.png" width="20" height="15"> Irán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+964" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/iq.png" width="20" height="15"> Iraq
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+353" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ie.png" width="20" height="15"> Irlanda
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+44" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/im.png" width="20" height="15"> Isla de Man
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+972" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/il.png" width="20" height="15"> Israel
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+39" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/it.png" width="20" height="15"> Italia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1876" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/jm.png" width="20" height="15"> Jamaica
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+81" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/jp.png" width="20" height="15"> Japón
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+44" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/je.png" width="20" height="15"> Jersey
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+962" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/jo.png" width="20" height="15"> Jordania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+7" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kz.png" width="20" height="15"> Kazajistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+254" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ke.png" width="20" height="15"> Kenia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+686" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ki.png" width="20" height="15"> Kiribati
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+850" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kp.png" width="20" height="15"> Corea del Norte
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+82" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kr.png" width="20" height="15"> Corea del Sur
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+383" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/xk.png" width="20" height="15"> Kosovo
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+965" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kw.png" width="20" height="15"> Kuwait
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+996" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kg.png" width="20" height="15"> Kirguistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+856" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/la.png" width="20" height="15"> Laos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+371" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lv.png" width="20" height="15"> Letonia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+961" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lb.png" width="20" height="15"> Líbano
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+266" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ls.png" width="20" height="15"> Lesoto
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+231" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lr.png" width="20" height="15"> Liberia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+218" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ly.png" width="20" height="15"> Libia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+423" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/li.png" width="20" height="15"> Liechtenstein
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+370" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lt.png" width="20" height="15"> Lituania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+352" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lu.png" width="20" height="15"> Luxemburgo
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+853" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mo.png" width="20" height="15"> Macao
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+389" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mk.png" width="20" height="15"> República de Macedonia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+261" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mg.png" width="20" height="15"> Madagascar
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+265" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mw.png" width="20" height="15"> Malaui
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+60" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/my.png" width="20" height="15"> Malasia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+960" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mv.png" width="20" height="15"> Maldivas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+223" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ml.png" width="20" height="15"> Malí
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+356" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mt.png" width="20" height="15"> Malta
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+692" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mh.png" width="20" height="15"> Islas Marshall
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+596" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mq.png" width="20" height="15"> Martinica
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+222" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mr.png" width="20" height="15"> Mauritania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+230" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mu.png" width="20" height="15"> Mauricio
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+262" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/yt.png" width="20" height="15"> Mayotte
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+52" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mx.png" width="20" height="15"> México
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+691" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/fm.png" width="20" height="15"> Estados Federados de Micronesia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+373" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/md.png" width="20" height="15"> Moldavia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+377" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mc.png" width="20" height="15"> Monaco
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+976" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mn.png" width="20" height="15"> Mongolia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+382" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/me.png" width="20" height="15"> Montenegro
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1664" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ms.png" width="20" height="15"> Montserrat
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+212" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ma.png" width="20" height="15"> Marruecos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+258" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mz.png" width="20" height="15"> Mozambique
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+95" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mm.png" width="20" height="15"> Birmania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+264" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/na.png" width="20" height="15"> Namibia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+674" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/nr.png" width="20" height="15"> Nauru
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+977" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/np.png" width="20" height="15"> Nepal
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+31" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/nl.png" width="20" height="15"> Holanda
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+599" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/an.png" width="20" height="15"> Antillas Holandesas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+687" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/nc.png" width="20" height="15"> Nueva Caledonia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+64" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/nz.png" width="20" height="15"> Nueva Zelanda
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+505" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ni.png" width="20" height="15"> Nicaragua
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+227" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ne.png" width="20" height="15"> Niger
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+234" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ng.png" width="20" height="15"> Nigeria
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+683" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/nu.png" width="20" height="15"> Niue
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+672" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/nf.png" width="20" height="15"> IslaNorfolk
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1670" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mp.png" width="20" height="15"> IslasMarianasdelNorte
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+47" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/no.png" width="20" height="15"> Noruega
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+968" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/om.png" width="20" height="15"> Omán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+92" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pk.png" width="20" height="15"> Pakistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+680" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pw.png" width="20" height="15"> Palaos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+507" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pa.png" width="20" height="15"> Panamá
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+675" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pg.png" width="20" height="15"> Papúa Nueva Guinea
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+595" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/py.png" width="20" height="15"> Paraguay
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+51" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pe.png" width="20" height="15"> Perú
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+63" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ph.png" width="20" height="15"> Filipinas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+872" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pn.png" width="20" height="15"> Islas Pitcairn
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+48" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pl.png" width="20" height="15"> Polonia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+351" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pt.png" width="20" height="15"> Portugal
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1939" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pr.png" width="20" height="15"> Puerto Rico
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+974" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/qa.png" width="20" height="15"> Qatar
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+40" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ro.png" width="20" height="15"> Rumania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+7" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ru.png" width="20" height="15"> Rusia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+250" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/rw.png" width="20" height="15"> Ruanda
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+262" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/re.png" width="20" height="15"> Reunion
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+590" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/bl.png" width="20" height="15"> San Bartolome
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+290" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sh.png" width="20" height="15"> Santa Elena, Ascensión y Tristán de Acuña
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1869" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/kn.png" width="20" height="15"> San Cristóbal y Nieves
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1758" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lc.png" width="20" height="15"> Santa Lucía
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+590" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/mf.png" width="20" height="15"> Isla de San Martín
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+508" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/pm.png" width="20" height="15"> San Pedro y Miquelon
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1784" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/vc.png" width="20" height="15"> San Vicente y las Granadinas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+685" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ws.png" width="20" height="15"> Samoa
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+378" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sm.png" width="20" height="15"> San Marino
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+239" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/st.png" width="20" height="15">  Santo Tomé y Príncipe
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+966" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sa.png" width="20" height="15"> Arabia Saudita
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+221" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sn.png" width="20" height="15"> Senegal
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+381" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/rs.png" width="20" height="15"> Serbia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+248" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sc.png" width="20" height="15"> Seychelles
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+232" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sl.png" width="20" height="15"> Sierra Leona
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+65" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sg.png" width="20" height="15"> Singapur
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+421" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sk.png" width="20" height="15"> Eslovaquia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+386" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/si.png" width="20" height="15"> Eslovenia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+677" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sb.png" width="20" height="15"> Islas Salomón
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+252" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/so.png" width="20" height="15"> Somalia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+27" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/za.png" width="20" height="15"> Sudáfrica
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+211" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ss.png" width="20" height="15"> Sudán del Sur
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+34" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/es.png" width="20" height="15"> España
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+94" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/lk.png" width="20" height="15"> Sri Lanka
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+970" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ps.png" width="20" height="15"> Estado de Palestina
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+249" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sd.png" width="20" height="15"> Sudán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+597" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sr.png" width="20" height="15"> Surinam
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+47" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sj.png" width="20" height="15"> Svalbard y Jan Mayen
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+268" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sz.png" width="20" height="15"> Suazilandia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+46" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/se.png" width="20" height="15"> Suecia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+41" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ch.png" width="20" height="15"> Suiza
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+963" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/sy.png" width="20" height="15"> Siria
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+886" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tw.png" width="20" height="15"> Taiwán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+992" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tj.png" width="20" height="15"> Tayikistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+255" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tz.png" width="20" height="15"> Tanzania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+66" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/th.png" width="20" height="15"> Tailandia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+670" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tl.png" width="20" height="15"> Timor Oriental
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+228" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tg.png" width="20" height="15"> Togo
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+690" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tk.png" width="20" height="15"> Tokelau
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+676" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/to.png" width="20" height="15"> Tonga
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1868" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tt.png" width="20" height="15"> Trinidad y Tobago
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+216" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tn.png" width="20" height="15"> Túnez
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+90" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tr.png" width="20" height="15"> Turquía
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+993" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tm.png" width="20" height="15"> Turkmenistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1649" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tc.png" width="20" height="15"> Islas Turcas y Caicos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+688" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/tv.png" width="20" height="15"> Tuvalu
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+256" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ug.png" width="20" height="15"> Uganda
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+380" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ua.png" width="20" height="15"> Ucrania
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+971" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ae.png" width="20" height="15"> Emiratos Árabes Unidos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+44" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/gb.png" width="20" height="15"> Reino Unido
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/us.png" width="20" height="15"> Estados Unidos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+598" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/uy.png" width="20" height="15"> Uruguay
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+998" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/uz.png" width="20" height="15"> Uzbekistán
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+678" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/vu.png" width="20" height="15"> Vanuatu
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+58" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ve.png" width="20" height="15"> Venezuela
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+84" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/vn.png" width="20" height="15"> Vietnam
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1284" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/vg.png" width="20" height="15"> Islas Vírgenes Británicas
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+1340" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/vi.png" width="20" height="15"> Islas Vírgenes de los Estados Unidos
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+681" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/wf.png" width="20" height="15"> Wallis y Futuna
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+967" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ye.png" width="20" height="15"> Yemen
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+260" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/zm.png" width="20" height="15"> Zambia
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+263" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/zw.png" width="20" height="15"> Zimbabue
+			        </li>
+			        <li onclick="getEmpId(this)" data-code="+358" class="dropdown-item">
+			          <img src="https://flagcdn.com/16x12/ax.png" width="20" height="15"> Åland
+			        </li>
+			      </ul>
+			    </div>
+			  </span>
+			</div>
+
+			</div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+	$.noConflict();
+
+})
+
+
+
+jQuery('input[name="elinput"]').mask('000 000 0000');
+
+
+
+jQuery("#dropdownMenuButton").click(function(){
+
+	jQuery("#paiscodigo").toggle();
+
+});
+
+
+
+
+jQuery("#miprefijo").click(function(){
+
+	jQuery("#paiscodigo").toggle();
+
+});
+
+
+
+function getEmpId(element)
+  {
+    var empId = element.dataset.code;
+    if(document.getElementById('miprefijo').value == ""){
+      document.getElementById('miprefijo').value = empId;
+      var mitlf = document.getElementById("telefonito").value;
+      document.getElementById("telefonito").value = "";
+      document.getElementById("telefonito").value = empId+mitlf;
+
+
+
+jQuery("#paiscodigo").toggle();
+
+
+    }
+    else{
+      document.getElementById('miprefijo').value = empId;
+      var mitlf = document.getElementById("elinput").value;
+      document.getElementById("telefonito").value = "";
+      document.getElementById("telefonito").value = empId+mitlf;
+
+
+jQuery("#paiscodigo").toggle();
+
+
+    }
+  }
+
+
+
+</script>
+
+
+
+
+<style type="text/css">
+	
+@media (min-width: 768px){
+	
+	
+	.prefijo{
+		width: 30% !important;	
+	}
+	
+	#elinput{
+		width: 68% !important;	
+	}
+
+}
+	
+	
+@media (max-width: 768px){
+	
+	
+	#miprefijo{
+		width: 100% !important;	
+	}
+	
+	#elinput{
+		width: 100% !important;	
+	}
+
+}
+
+
+.redf{
+	height: 400px;
+    overflow-x: hidden;
+		background: white;
+   /* width: 300px;*/
+}	
+	
+	li.dropdown-item > p{
+		color: black;
+	}
+
+.dropdown-item {
+	cursor: pointer;
+}
+
+/* Este elemento debe tener "position: relative" */
+div#is-relative{
+  /*max-width: 420px;*/
+  position: relative;
+}
+
+/* El icono debe ser "position: absolute"
+ * Ademas le damos un "display: block" y lo posicionamos */
+#icon{
+    position: absolute;
+    display: block;
+    top: .5rem;
+    left: 1rem;
+    user-select: none;
+    cursor: pointer;
+}
+#miprefijo{
+	padding-left: 2.6rem !important;
+}
+
+
+</style>
+
+
+
+
+
+<script>
+
+
+jQuery('#elinput').bind('input', function() { 
+	
+  
+	if(jQuery('#telefonito').val() == "")
+    {
+
+	jQuery('#telefonito').val(jQuery(this).val());
+
+
+    }else{
+
+	jQuery('#telefonito').val(jQuery('#miprefijo').val()+jQuery(this).val());
+
+
+    }
+    
+
+
+
+    if(jQuery('#elinput').val().length == 14){
+	jQuery('#botoncito').attr("disabled", false);
+    }
+    else
+    {
+	jQuery('#botoncito').attr("disabled", true);
+    } 
+
+
+
+
+});
+
+
+jQuery('#botoncito').attr("disabled", true);
+
+  
+
+</script>
 
 
 </body>
