@@ -15,12 +15,7 @@
 </head>
 <body>
 
-
-
-
-
 <div class="container">
-
 
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -33,7 +28,6 @@
   </div>
 </div>
 
-
   <div class="row">
     <div class="col-md-12 text-center">
     	<br><br>
@@ -44,11 +38,7 @@
     	<h2>Demostraci&oacute;n:</h2>
     </div>
     <div class="col-md-6">
-      
-
-
-
-
+     
 			<label>
 
 			<input class="wpcf7-form-control wpcf7-hidden" id="telefonito" value="+355546 465 4654" type="hidden" name="telefonito">
@@ -56,10 +46,9 @@
 			</label>
 
 
+
+
 			<div id="camposbanderas">
-
-
-
 
 			<div id="is-relative">
 			  <input type="text" class="input prefijo" id="miprefijo" style="width: 35% !important;padding: 1%;" value="+34" readonly>
@@ -806,10 +795,6 @@
 			</div>
 
 
-
-
-
-
     </div>
   </div>
 </div>
@@ -929,11 +914,14 @@ jQuery("#miprefijo").click(function(){
 function getEmpId(element)
   {
 
+
   	jQuery("#busqueda").toggle();
   	jQuery("#busqueda").html("");
   	jQuery("#buscarcountry").val("");
     var empId = element.dataset.code;
     if(document.getElementById('miprefijo').value == ""){
+
+    	jQuery("#dropdownMenuButton")[0].src = element.firstElementChild.currentSrc;
       document.getElementById('miprefijo').value = empId;
       var mitlf = document.getElementById("telefonito").value;
       document.getElementById("telefonito").value = "";
@@ -948,6 +936,7 @@ function getEmpId(element)
 
     }
     else{
+    	jQuery("#dropdownMenuButton")[0].src = element.firstElementChild.currentSrc;
       document.getElementById('miprefijo').value = empId;
       var mitlf = document.getElementById("elinput").value;
       document.getElementById("telefonito").value = "";
