@@ -68,8 +68,10 @@
 			      <img class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://inseryal.es/wp-content/uploads/2023/01/mundo.png" width="25px" height="25px">
 			</span>
 
-			    <div class="dropdown">
-			      <ul id="paiscodigo" class="redf holaleo dropdown-menu" aria-labelledby="dropdownMenuButton" style="display: none;">
+			    <div id="paiscodigo" class="dropdown" style="display: none;">
+			    	<input type="text" value="" style="width: 370px;" id="buscarcountry">
+			    	<ul id="busqueda" class="redf"  style="display: none;width: 370px;padding-left: 17px;"></ul>
+			      <ul id="lospaises" class="redf dropdown-menu" aria-labelledby="dropdownMenuButton" style="display: block;">
 			        <li onclick="getEmpId(this)" data-code="+93" class="dropdown-item">
 			          <img src="https://flagcdn.com/16x12/af.png" width="20" height="15"> Afganistán
 			        </li>
@@ -824,6 +826,70 @@ $(document).ready(function(){
 })
 
 
+function buscador(cadena, buscar){
+
+
+
+		var n = cadena.innerText.toLowerCase().search(buscar.toLowerCase()); 
+
+		if(n >= 0) {
+
+		    armarLista(cadena);
+
+		}
+
+}
+
+
+function armarLista(pais){
+
+
+
+	jQuery("#busqueda").show();
+
+
+	if(jQuery("#busqueda")[0].textContent === "" ){
+
+
+		jQuery("#busqueda").html('<li class="dropdown-item" onclick="getEmpId(this)" data-code="'+pais.dataset.code+'" class="dropdown-item">'+pais.innerHTML+'</li>');
+
+
+	}else{
+
+		jQuery("#busqueda").append('<li class="dropdown-item" onclick="getEmpId(this)" data-code="'+pais.dataset.code+'" class="dropdown-item">'+pais.innerHTML+'</li>');
+
+	}
+
+
+}
+
+
+
+jQuery('#buscarcountry').bind('input', function() { 
+
+
+	jQuery("#lospaises").toggle();
+	jQuery("#busqueda").html("");
+	jQuery("#lospaises").hide();
+	jQuery("#lospaises").children().each(function(index, value) {
+	 
+	 var textf = jQuery(this).children().parent().children();
+	 	
+	 //console.dir(textf[0].src);
+	 //console.dir(textf['prevObject'][0].innerText);
+	 
+	 buscador(textf['prevObject'][0],jQuery('#buscarcountry').val());
+
+
+
+
+	});
+
+});
+
+
+
+
 
 jQuery('input[name="elinput"]').mask('000 000 0000');
 
@@ -832,6 +898,12 @@ jQuery('input[name="elinput"]').mask('000 000 0000');
 jQuery("#dropdownMenuButton").click(function(){
 
 	jQuery("#paiscodigo").toggle();
+	jQuery("#lospaises").show();
+	jQuery("#busqueda").hide();
+	jQuery("#buscarcountry").val("");
+
+	 let caja = document.getElementById("buscarcountry")
+    caja.focus();
 
 });
 
@@ -839,8 +911,16 @@ jQuery("#dropdownMenuButton").click(function(){
 
 
 jQuery("#miprefijo").click(function(){
+	
+	let caja = document.getElementById("buscarcountry")
+  caja.focus();
 
+	//jQuery("#buscarcountry").focus();
 	jQuery("#paiscodigo").toggle();
+	jQuery("#lospaises").show();
+	jQuery("#busqueda").hide();
+	jQuery("#buscarcountry").val("");
+	
 
 });
 
@@ -848,6 +928,10 @@ jQuery("#miprefijo").click(function(){
 
 function getEmpId(element)
   {
+
+  	jQuery("#busqueda").toggle();
+  	jQuery("#busqueda").html("");
+  	jQuery("#buscarcountry").val("");
     var empId = element.dataset.code;
     if(document.getElementById('miprefijo').value == ""){
       document.getElementById('miprefijo').value = empId;
@@ -855,9 +939,11 @@ function getEmpId(element)
       document.getElementById("telefonito").value = "";
       document.getElementById("telefonito").value = empId+mitlf;
 
+			jQuery("#paiscodigo").toggle();
 
 
-jQuery("#paiscodigo").toggle();
+		 let caja = document.getElementById("elinput")
+	    caja.focus();
 
 
     }
@@ -868,7 +954,12 @@ jQuery("#paiscodigo").toggle();
       document.getElementById("telefonito").value = empId+mitlf;
 
 
-jQuery("#paiscodigo").toggle();
+			jQuery("#paiscodigo").toggle();
+
+
+
+		 let caja = document.getElementById("elinput")
+	    caja.focus();
 
 
     }
@@ -946,6 +1037,10 @@ div#is-relative{
 	padding-left: 2.6rem !important;
 }
 
+
+.dropdown-item:hover {
+  background-color: #e9ecef;
+}
 
 </style>
 
